@@ -1,10 +1,10 @@
-# founder
+# Founder
 
 Composable editorial passes for founder writing.
 
-`founder` helps an AI editor improve a draft through focused craft passes: remove AI residue, sharpen judgment, clarify the argument, preserve voice, and make the best ideas stick.
+**Founder** helps you [write simply](https://www.paulgraham.com/simply.html). This repo has a number of skill files that each focus on different aspects of writing styles. Founder will remove AI residue, sharpen judgment, clarify the argument, preserve voice, and make the best ideas stick. Most importantly, it will keep the prose lightweight so that the reader can spend more time and energy on the ideas expressed. 
 
-The point is composition. Do not ask one giant prompt to make a draft "better." Choose the few editorial moves the draft actually needs.
+Choose the few editorial moves the draft actually needs.
 
 ## Install
 
