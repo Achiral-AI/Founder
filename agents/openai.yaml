@@ -1,0 +1,4 @@
+interface:
+  display_name: "Founder"
+  short_description: "Composable editorial passes for founder writing"
+  default_prompt: "Use $founder to revise this draft with a focused editorial chain."

@@ -1,28 +1,54 @@
 # founder
 
-Composable editorial skills for turning founder writing into clear, rigorous, memorable work without flattening the author's voice.
+Composable editorial passes for founder writing.
+
+`founder` helps an AI editor improve a draft through focused craft passes: remove AI residue, sharpen judgment, clarify the argument, preserve voice, and make the best ideas stick.
+
+The point is composition. Do not ask one giant prompt to make a draft "better." Choose the few editorial moves the draft actually needs.
+
+## Install
+
+Install this as a Codex skill:
+
+```bash
+python3 /Users/sonicaarora/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo Achiral-AI/founder \
+  --path .
+```
+
+After installation, invoke it with `$founder`:
+
+```text
+Use $founder on this draft. Start with No-AI-Slop, then use Clarity, Precision, and Voice.
+```
 
 ## How To Use
 
-Use these skills as an editorial chain. Each file in `skills/` is one pass over the draft, with one job. Do not run every skill by default. Pick the smallest chain that matches what the draft needs.
+Use each file in `skills/` as one pass over the draft.
 
-Most chains should start with `No-AI-Slop` or a similar cleanup skill when the draft feels generic, over-polished, padded, or model-like. That first pass removes the obvious residue before more intentional editorial work begins.
+Most drafts should start with [`No-AI-Slop`](skills/No-AI-Slop.md) when the prose feels generic, padded, over-polished, or model-like. That first pass removes the obvious residue before more intentional editorial work begins.
 
-After that, choose the craft pass that matches the real problem:
+Then choose the craft pass that matches the real problem:
 
-- Use `Editorial-Judgment` when the piece needs better selection, emphasis, or structure.
-- Use `Thought-Leadership` when the piece needs a stronger point of view.
-- Use `Intellectual-Rigor` when the claims need sharper reasoning, evidence, or scope.
-- Use `Argumentation` when the logic needs a clearer path from premise to conclusion.
-- Use `Persuasion` when the writing needs to change a reader's mind or motivate action.
-- Use `Brand-Writing`, `Executive-Writing`, `Technical-Writing`, `Plain-Language`, or `Storytelling` for domain-specific craft.
-- Use `Voice` near the end so the draft does not become generic after multiple edits.
-- Use `Memorability` when the central idea deserves a stronger formulation.
-- Use `Polish` last, only after the deeper editorial choices are settled.
+| Need | Use |
+| --- | --- |
+| Better selection, emphasis, or structure | [`Editorial-Judgment`](skills/Editorial-Judgment.md) |
+| A stronger point of view | [`Thought-Leadership`](skills/Thought-Leadership.md) |
+| Better reasoning, evidence, or scope | [`Intellectual-Rigor`](skills/Intellectual-Rigor.md) |
+| A clearer path from premise to conclusion | [`Argumentation`](skills/Argumentation.md) |
+| More conviction or action | [`Persuasion`](skills/Persuasion.md) |
+| Consistent company language | [`Brand-Writing`](skills/Brand-Writing.md) |
+| Fast executive comprehension | [`Executive-Writing`](skills/Executive-Writing.md) |
+| Accurate procedures or explanations | [`Technical-Writing`](skills/Technical-Writing.md) |
+| Accessibility without dumbing down | [`Plain-Language`](skills/Plain-Language.md) |
+| Character, scene, and payoff | [`Storytelling`](skills/Storytelling.md) |
+| A recognizable author | [`Voice`](skills/Voice.md) |
+| Lines readers remember | [`Memorability`](skills/Memorability.md) |
+| Final cleanup | [`Polish`](skills/Polish.md) |
 
 ## Default Chain
 
-Use this when a draft needs general editorial improvement:
+Use this when a draft needs broad editorial improvement:
 
 ```text
 No-AI-Slop
@@ -34,7 +60,7 @@ No-AI-Slop
   -> Memorability
 ```
 
-This is a guide, not a rule. Skip any pass that does not clearly improve the artifact.
+This is a guide, not a rule. Skip any pass that does not clearly improve the draft.
 
 ## Common Pipelines
 
@@ -54,6 +80,35 @@ Technical-Writing -> Plain-Language -> Clarity -> Precision -> Reader-Empathy
 Narrative piece:
 Editorial-Judgment -> Narrative -> Storytelling -> Voice -> Memorability
 ```
+
+## Skill Map
+
+The core passes improve the underlying writing:
+
+- [`No-AI-Slop`](skills/No-AI-Slop.md): removes generic, model-like prose patterns.
+- [`Editorial-Judgment`](skills/Editorial-Judgment.md): decides what belongs, what matters, and where to stop.
+- [`Clarity`](skills/Clarity.md): makes the idea immediately understandable.
+- [`Precision`](skills/Precision.md): makes each important word carry the intended meaning.
+- [`Concision`](skills/Concision.md): increases information density.
+- [`Voice`](skills/Voice.md): preserves the author's recognizable style.
+- [`Memorability`](skills/Memorability.md): gives the idea a durable formulation.
+
+The intentional craft passes shape the piece for its job:
+
+- [`Thought-Leadership`](skills/Thought-Leadership.md): strengthens thesis, insight, and intellectual position.
+- [`Persuasion`](skills/Persuasion.md): moves the reader toward belief or action.
+- [`Authority`](skills/Authority.md): creates earned confidence without fake certainty.
+- [`Intellectual-Rigor`](skills/Intellectual-Rigor.md): scopes claims and strengthens reasoning.
+- [`Narrative`](skills/Narrative.md): creates progression, tension, and resolution.
+- [`Storytelling`](skills/Storytelling.md): uses character, scene, and emotional movement.
+- [`Brand-Writing`](skills/Brand-Writing.md): aligns copy with positioning and identity.
+- [`Executive-Writing`](skills/Executive-Writing.md): makes the point fast, strategic, and decision-ready.
+- [`Technical-Writing`](skills/Technical-Writing.md): improves accuracy, terminology, and reproducibility.
+- [`Plain-Language`](skills/Plain-Language.md): makes complex ideas easier to read.
+- [`Reader-Empathy`](skills/Reader-Empathy.md): follows the reader's knowledge, questions, and objections.
+- [`Argumentation`](skills/Argumentation.md): connects premise, reasoning, evidence, and conclusion.
+- [`Originality`](skills/Originality.md): replaces familiar internet language with a more distinctive angle.
+- [`Polish`](skills/Polish.md): cleans the final surface.
 
 ## Example Prompts
 
@@ -75,6 +130,10 @@ Use Executive-Writing and Editorial-Judgment. Turn this into a concise memo for 
 
 ```text
 Use Technical-Writing, Plain-Language, and Reader-Empathy. Make this accurate and easy for a non-specialist to follow.
+```
+
+```text
+Use $founder on this README. Apply No-AI-Slop, Editorial-Judgment, Clarity, Brand-Writing, Voice, and Polish.
 ```
 
 ## Working Method
