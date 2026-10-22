@@ -2,7 +2,7 @@
 
 Composable editorial passes for founder writing.
 
-**Founder** helps you [write simply](https://www.paulgraham.com/simply.html). This repo has a number of skill files that each focus on different aspects of writing styles. Founder will remove AI residue, sharpen judgment, clarify the argument, preserve voice, and make the best ideas stick. Most importantly, it will keep the prose lightweight so that the reader can spend more time and energy on the ideas expressed. 
+**Founder** helps you [write simply](https://www.paulgraham.com/simply.html). This repo has a number of skill files that each focus on different aspects of writing styles. Founder will remove AI residue, sharpen judgment, clarify the argument, preserve voice, and make the best ideas stick. Most importantly, it will keep the prose lightweight so that the reader can spend more time and energy on the ideas expressed.
 
 Choose the few editorial moves the draft actually needs.
 
@@ -30,21 +30,21 @@ Most drafts should start with [`No-AI-Slop`](skills/No-AI-Slop.md) when the pros
 
 Then choose the craft pass that matches the real problem:
 
-| Need | Use |
-| --- | --- |
-| Better selection, emphasis, or structure | [`Editorial-Judgment`](skills/Editorial-Judgment.md) |
-| A stronger point of view | [`Thought-Leadership`](skills/Thought-Leadership.md) |
-| Better reasoning, evidence, or scope | [`Intellectual-Rigor`](skills/Intellectual-Rigor.md) |
-| A clearer path from premise to conclusion | [`Argumentation`](skills/Argumentation.md) |
-| More conviction or action | [`Persuasion`](skills/Persuasion.md) |
-| Consistent company language | [`Brand-Writing`](skills/Brand-Writing.md) |
-| Fast executive comprehension | [`Executive-Writing`](skills/Executive-Writing.md) |
-| Accurate procedures or explanations | [`Technical-Writing`](skills/Technical-Writing.md) |
-| Accessibility without dumbing down | [`Plain-Language`](skills/Plain-Language.md) |
-| Character, scene, and payoff | [`Storytelling`](skills/Storytelling.md) |
-| A recognizable author | [`Voice`](skills/Voice.md) |
-| Lines readers remember | [`Memorability`](skills/Memorability.md) |
-| Final cleanup | [`Polish`](skills/Polish.md) |
+| Need                                      | Use                                                  |
+| ----------------------------------------- | ---------------------------------------------------- |
+| Better selection, emphasis, or structure  | [`Editorial-Judgment`](skills/Editorial-Judgment.md) |
+| A stronger point of view                  | [`Thought-Leadership`](skills/Thought-Leadership.md) |
+| Better reasoning, evidence, or scope      | [`Intellectual-Rigor`](skills/Intellectual-Rigor.md) |
+| A clearer path from premise to conclusion | [`Argumentation`](skills/Argumentation.md)           |
+| More conviction or action                 | [`Persuasion`](skills/Persuasion.md)                 |
+| Consistent company language               | [`Brand-Writing`](skills/Brand-Writing.md)           |
+| Fast executive comprehension              | [`Executive-Writing`](skills/Executive-Writing.md)   |
+| Accurate procedures or explanations       | [`Technical-Writing`](skills/Technical-Writing.md)   |
+| Accessibility without dumbing down        | [`Plain-Language`](skills/Plain-Language.md)         |
+| Character, scene, and payoff              | [`Storytelling`](skills/Storytelling.md)             |
+| A recognizable author                     | [`Voice`](skills/Voice.md)                           |
+| Lines readers remember                    | [`Memorability`](skills/Memorability.md)             |
+| Final cleanup                             | [`Polish`](skills/Polish.md)                         |
 
 ## Default Chain
 
@@ -109,6 +109,28 @@ The intentional craft passes shape the piece for its job:
 - [`Argumentation`](skills/Argumentation.md): connects premise, reasoning, evidence, and conclusion.
 - [`Originality`](skills/Originality.md): replaces familiar internet language with a more distinctive angle.
 - [`Polish`](skills/Polish.md): cleans the final surface.
+
+## Anthromorphosize
+
+[`anthromorphosize/`](anthromorphosize/SKILL.md) is a separate skill that sets
+the quality bar rather than editing the prose. It turns the conventions of the
+best AI-lab publishing into pass/fail checks, in three standards:
+
+- [`docs.md`](anthromorphosize/docs.md): product docs, held to the bar of
+  Anthropic's Claude docs.
+- [`writing.md`](anthromorphosize/writing.md): blog posts, essays and concept
+  pages, held to the bar of Anthropic's and OpenAI's news and engineering
+  writing, in the author's own voice.
+- [`research.md`](anthromorphosize/research.md): research pre-prints, held to
+  the bar of Anthropic's research papers.
+
+Each check is marked blocking or polish, so the skill can drive a reviewer as
+well as a writer. The checks are our own summary of public pages, listed in
+each file; this project is not affiliated with Anthropic or OpenAI.
+
+```text
+Use $anthromorphosize on this docs page, then Technical-Writing to fix what fails.
+```
 
 ## Example Prompts
 
