@@ -37,6 +37,7 @@ Add `Memorability` when the piece needs lines that stick. Add one domain craft w
 - Use `skills/Persuasion.md` when the writing needs to create conviction or action.
 - Use `skills/Brand-Writing.md`, `skills/Executive-Writing.md`, `skills/Technical-Writing.md`, `skills/Plain-Language.md`, or `skills/Storytelling.md` when the artifact has a specific genre.
 - Use `skills/Preprint-Prose.md` when the artifact is a research paper, preprint, benchmark write-up, or research memo meant to read as credible science.
+- Use `skills/Distill-Essay.md` when the artifact is a research essay or research preview that should read as a first-person working hypothesis, in the style of the Distill journal.
 - Use `skills/Voice.md` near the end to preserve the author's recognizable style.
 - Use `skills/Memorability.md` near the end to make the central idea more durable.
 - Use `skills/Polish.md` only as the final cleanup pass.

@@ -42,6 +42,7 @@ Then choose the craft pass that matches the real problem:
 | Accurate procedures or explanations       | [`Technical-Writing`](skills/Technical-Writing.md)   |
 | Accessibility without dumbing down        | [`Plain-Language`](skills/Plain-Language.md)         |
 | Character, scene, and payoff              | [`Storytelling`](skills/Storytelling.md)             |
+| A research essay as a working hypothesis  | [`Distill-Essay`](skills/Distill-Essay.md)           |
 | A recognizable author                     | [`Voice`](skills/Voice.md)                           |
 | Lines readers remember                    | [`Memorability`](skills/Memorability.md)             |
 | Final cleanup                             | [`Polish`](skills/Polish.md)                         |
@@ -79,6 +80,9 @@ Technical-Writing -> Plain-Language -> Clarity -> Precision -> Reader-Empathy
 
 Narrative piece:
 Editorial-Judgment -> Narrative -> Storytelling -> Voice -> Memorability
+
+Research essay:
+No-AI-Slop -> Distill-Essay -> Intellectual-Rigor -> Clarity -> Voice
 ```
 
 ## Skill Map
@@ -108,6 +112,7 @@ The intentional craft passes shape the piece for its job:
 - [`Reader-Empathy`](skills/Reader-Empathy.md): follows the reader's knowledge, questions, and objections.
 - [`Argumentation`](skills/Argumentation.md): connects premise, reasoning, evidence, and conclusion.
 - [`Originality`](skills/Originality.md): replaces familiar internet language with a more distinctive angle.
+- [`Distill-Essay`](skills/Distill-Essay.md): turns a research idea into a first-person working-hypothesis essay with the argument up front.
 - [`Polish`](skills/Polish.md): cleans the final surface.
 
 ## Anthromorphosize
