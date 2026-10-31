@@ -23,7 +23,7 @@ Calibrate against Distill (2016–2021), for example _Feature Visualization_ (Ol
 
 ## Edit Moves
 
-- Add a short version at the top: the claim in one sentence, why it matters in a paragraph, and the argument as three to five numbered steps.
+- Open with a section that gives the whole argument: the claim in one sentence, why it matters in a paragraph, and the argument as a few numbered steps. Name it for what it shows in this piece, not with a stock label.
 - Mark the boldest step as speculative instead of deleting it or hedging every step.
 - Rewrite paper scaffolding ("This work proposes", "Our contributions are") as the author's own claim in the first person.
 - Pick the single best example and walk the reader through it, pointing at the exact word, value, or event that carries the point.
@@ -41,6 +41,7 @@ Calibrate against Distill (2016–2021), for example _Feature Visualization_ (Ol
 
 ## Avoid
 
+- Copying a model text's headings, opening lines, signature phrases, or section order. Borrow the moves, not the words; every heading should be specific to this piece.
 - Inventing biography, lab history, or past beliefs the author has not stated. First person carries reasoning, not made-up experience.
 - Turning a hypothesis into a finding because the voice became more confident.
 - More than one or two analogies, or an analogy that implies a stronger mechanism than the evidence supports.
